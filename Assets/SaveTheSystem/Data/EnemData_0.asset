@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: EnemData_0
   m_EditorClassIdentifier: 
   Health: 1
-  MoveSpeed: 5
+  MoveSpeed: 3
   Score: 100

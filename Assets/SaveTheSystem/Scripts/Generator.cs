@@ -96,7 +96,7 @@ namespace SaveTheSystem
                 {
                     if (_currentEnemy < 3)
                     {
-                        SpawnEnemy(_enemiesData[3]);
+                        SpawnEnemy(_enemiesData[2]);
                         _currentEnemy++;
                     }
                 }
