@@ -1,0 +1,28 @@
+﻿using UnityEngine.SceneManagement;
+using DG.Tweening;
+namespace SaveTheSystem
+{
+    public static class Loader
+    {
+        public enum Scene
+        {
+            GameplayScene,
+            MenuScene,
+        }
+
+        private static Scene targetScene;
+
+        public static void Load(Scene targetScene, System.Action afterLoadScene = null)
+        {
+            Loader.targetScene = targetScene;
+            SceneManager.LoadScene(Loader.targetScene.ToString());
+        }
+
+        public static void LoadTweening(Scene targetScene, System.Action afterLoadScene = null)
+        {
+            DOTween.Clear(true);
+            Loader.targetScene = targetScene;
+            SceneManager.LoadScene(Loader.targetScene.ToString());
+        }
+    }
+}
